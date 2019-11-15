@@ -5,7 +5,7 @@ Metroidvania like game done for the [Metroidvania Jam Month 6](https://itch.io/j
 We are UndistinguishedFellows, basically that some undistinguished fellows:   
 - [Capitan Literal](https://github.com/CapitanLiteral)   
 - [Dibu13](https://github.com/dibu13)   
-- [Jorge Vila]()   
+- [Jorge Vila](https://github.com/Wagerbit)   
 - [Josef212](https://github.com/Josef212)   
 - [Pau Bonet](https://github.com/BooLAW)   
    
