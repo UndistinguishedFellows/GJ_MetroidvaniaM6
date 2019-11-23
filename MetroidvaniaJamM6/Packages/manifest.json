@@ -3,6 +3,7 @@
     "com.unity.ads": "2.0.8",
     "com.unity.analytics": "3.3.2",
     "com.unity.collab-proxy": "1.2.16",
+    "com.unity.guid-based-reference": "https://github.com/Josef212/guid-based-reference.git#upm",
     "com.unity.package-manager-ui": "2.1.2",
     "com.unity.purchasing": "2.0.6",
     "com.unity.textmeshpro": "2.0.1",
@@ -37,5 +38,11 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
+  },
+  "lock": {
+    "com.unity.guid-based-reference": {
+      "hash": "abcc6cddc08aef02b37a98eebed49c6e0e4d9266",
+      "revision": "upm"
+    }
   }
 }
