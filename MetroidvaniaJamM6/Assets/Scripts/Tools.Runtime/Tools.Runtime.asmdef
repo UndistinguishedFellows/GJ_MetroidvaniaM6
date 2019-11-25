@@ -1,3 +1,15 @@
-﻿{
-	"name": "Tools.Runtime"
+{
+    "name": "Tools.Runtime",
+    "references": [
+        "GUID:d09da028e1d0d084cb97d3d526fe55f2"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
 }

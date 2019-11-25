@@ -1,7 +1,8 @@
 {
     "name": "Gameplay.Runtime",
     "references": [
-        "GUID:10bcb0b9f2b5a7d45a01cc6ca78b3152"
+        "GUID:10bcb0b9f2b5a7d45a01cc6ca78b3152",
+        "GUID:d09da028e1d0d084cb97d3d526fe55f2"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [],
