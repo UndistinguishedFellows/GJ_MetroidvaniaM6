@@ -38,3 +38,5 @@ sysinfo.txt
 
 # Jetbrains Rider
 **/.idea/**
+
+**/EditorPlugins/*
