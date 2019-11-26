@@ -2,7 +2,8 @@
     "name": "Plugins",
     "references": [
         "GUID:919fd886a4006f04fb770edee25f2182",
-        "GUID:84f3bb5a2312b5048aceac4120c197fb"
+        "GUID:84f3bb5a2312b5048aceac4120c197fb",
+        "GUID:203e2e682fd88514aa73685d8852f1a1"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [],
