@@ -59,6 +59,16 @@ public class PlayerController : SerializedMonoBehaviour
         OnFixedUpdate.Invoke(Time.fixedDeltaTime);
     }
 
+    private void OnEnable()
+    {
+        m_behaviours.ForEach(x => x.OnActivate());
+    }
+    
+    private void OnDisable()
+    {
+        m_behaviours.ForEach(x => x.OnDeactivate());
+    }
+
     private void OnDestroy()
     {
         m_pendingToAddBehaviours.Clear();

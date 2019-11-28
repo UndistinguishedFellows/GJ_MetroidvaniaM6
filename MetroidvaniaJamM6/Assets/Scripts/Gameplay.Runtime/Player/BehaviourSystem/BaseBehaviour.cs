@@ -12,6 +12,8 @@ public abstract class BaseBehaviour
     }
 
     public virtual void Start() { }
-    
     public virtual void CleanUp() { }
+
+    public virtual void OnActivate() { }
+    public virtual void OnDeactivate() { }
 }
