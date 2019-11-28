@@ -20,7 +20,7 @@ MonoBehaviour:
   OnlyInDevBuilds: 0
   ShowOnException: 1
   TouchDetector: 1
-  OpenAndCloseKeys: "~\\`|\xA7\xB1"
+  OpenAndCloseKeys: "~\\`|\xA7\xB1\xBA"
   ShowSeparateExceptionButton: 1
   ShowSeparateAssertButton: 1
   DisableUGUIWhenOpen: 1
