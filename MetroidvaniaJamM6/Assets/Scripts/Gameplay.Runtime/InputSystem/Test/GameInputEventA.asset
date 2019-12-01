@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f0ab729d53d094498f2c2b6ff3f6cd0, type: 3}
-  m_Name: GameInputEvent
+  m_Name: GameInputEventA
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -27,7 +27,7 @@ MonoBehaviour:
         System.Core
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 7
       Data: 1|MouseButtonInputEvent, Gameplay.Runtime
@@ -45,7 +45,7 @@ MonoBehaviour:
       Data: 2|KeyboardInputEvent, Gameplay.Runtime
     - Name: m_keyCode
       Entry: 3
-      Data: 100
+      Data: 275
     - Name: m_mode
       Entry: 3
       Data: 4
@@ -56,49 +56,9 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
-      Entry: 7
-      Data: 3|ControllerInputEvent, Gameplay.Runtime
-    - Name: m_buttonName
-      Entry: 1
-      Data: joystick button 0
-    - Name: m_customButtonName
-      Entry: 1
-      Data: Custom
-    - Name: m_mode
-      Entry: 3
-      Data: 4
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
-    - Name: m_axisInputEvents
-      Entry: 7
-      Data: 4|System.Collections.Generic.HashSet`1[[AxisInputEvent, Gameplay.Runtime]],
-        System.Core
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 5|AxisInputEvent, Gameplay.Runtime
-    - Name: m_axisName
-      Entry: 1
-      Data: 
-    - Name: m_axisType
-      Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  m_name: 
+  m_name: GameInputEventA
