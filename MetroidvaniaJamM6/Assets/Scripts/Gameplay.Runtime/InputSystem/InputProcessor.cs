@@ -39,27 +39,6 @@ public class InputProcessor : MonoBehaviour
         Instance.m_gameInputsCallbacks[gameInput].Remove(inputReceiver);
     }
     
-    public static void AddAxisReceiver(AxisInputEvent axisInputEvent, IInputReceiver inputReceiver)
-    {
-        if (!Instance.m_axisCallbacks.ContainsKey(axisInputEvent))
-        {
-            Instance.m_axisCallbacks[axisInputEvent] = new List<IInputReceiver>();
-        }
-        
-        Instance.m_axisCallbacks[axisInputEvent].Add(inputReceiver);
-    }
-
-    public static void RemoveAxisEventCallback(AxisInputEvent axisInputEvent, IInputReceiver inputReceiver)
-    {
-        if (!Instance.m_axisCallbacks.ContainsKey(axisInputEvent))
-        {
-            Debug.LogWarning("Trying to remove event that has no Input Receiver");
-            return;
-        }
-        
-        Instance.m_axisCallbacks[axisInputEvent].Remove(inputReceiver);
-    }
-
     // --------------------------------------------------------
     
     private void Update()
@@ -69,12 +48,6 @@ public class InputProcessor : MonoBehaviour
             if (bind.Key.Evaluate())
             {
                 bind.Value?.ForEach(x => x?.OnInputEvent(bind.Key));
-            }
-
-            var axis = bind.Key.GetAxis();
-            if (axis.Count > 0)
-            {
-                bind.Value?.ForEach(x => x?.OnAxis(axis));
             }
         });
     }
@@ -109,5 +82,4 @@ public class InputProcessor : MonoBehaviour
     private static bool s_quitting = false;
     
     private Dictionary<GameInputEvent, List<IInputReceiver>> m_gameInputsCallbacks = new Dictionary<GameInputEvent, List<IInputReceiver>>();
-    private Dictionary<AxisInputEvent, List<IInputReceiver>> m_axisCallbacks = new Dictionary<AxisInputEvent, List<IInputReceiver>>();
 }
