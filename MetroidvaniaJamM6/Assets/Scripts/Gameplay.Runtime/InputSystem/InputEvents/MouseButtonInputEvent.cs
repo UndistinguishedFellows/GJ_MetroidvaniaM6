@@ -14,9 +14,22 @@ public class MouseButtonInputEvent : InputEventBase
         if (m_mode.HasFlag(InputMode.Up))
             button |= Input.GetMouseButtonDown(m_buttonCode);
         
-        
-
         return button;
+    }
+    
+    public override int GetHashCode()
+    {
+        int hash = 17;
+
+        hash = hash * 23 + m_buttonCode.GetHashCode();
+        hash = hash * 23 + m_mode.GetHashCode();
+
+        return hash;
+    }
+    
+    public override string ToString()
+    {
+        return $"Mouse button input event: {m_buttonCode} - Mode: {m_mode}";
     }
 
     [SerializeField][ValueDropdown(nameof(s_mouseButtons))] protected int m_buttonCode = 0; 

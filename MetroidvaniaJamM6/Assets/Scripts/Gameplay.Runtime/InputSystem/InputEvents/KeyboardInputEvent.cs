@@ -16,6 +16,22 @@ public class KeyboardInputEvent : InputEventBase
 
         return key && modifier;
     }
+    
+    public override int GetHashCode()
+    {
+        int hash = 17;
+
+        hash = hash * 23 + m_keyCode.GetHashCode();
+        hash = hash * 23 + m_mode.GetHashCode();
+        hash = hash * 23 + m_modifier.GetHashCode();
+
+        return hash;
+    }
+    
+    public override string ToString()
+    {
+        return $"Keyboard input event: {m_keyCode} - Mode: {m_mode} - Modifier: {m_modifier}";
+    }
 
     [SerializeField] protected KeyCode m_keyCode = KeyCode.None;
     [SerializeField] protected InputMode m_mode = InputMode.Up;

@@ -8,15 +8,29 @@ public class ControllerInputEvent : InputEventBase
         bool button = false;
         
         if (m_mode.HasFlag(InputMode.Down))
-            button |= Input.GetButtonDown(m_buttonName);
+            button |= Input.GetButtonDown(ButtonName);
         if (m_mode.HasFlag(InputMode.Hold))
-            button |= Input.GetButton(m_buttonName);
+            button |= Input.GetButton(ButtonName);
         if (m_mode.HasFlag(InputMode.Up))
-            button |= Input.GetButtonUp(m_buttonName);
+            button |= Input.GetButtonUp(ButtonName);
         
-        
-
         return button;
+    }
+    
+    public override int GetHashCode()
+    {
+        int hash = 17;
+
+        hash = hash * 23 + ButtonName.GetHashCode();
+        hash = hash * 23 + CustomButtonName.GetHashCode();
+        hash = hash * 23 + m_mode.GetHashCode();
+
+        return hash;
+    }
+
+    public override string ToString()
+    {
+        return $"Controller input event: {ButtonName}(Custom: {CustomButtonName}) - Mode: {m_mode}";
     }
 
     protected virtual bool CustomButtonName => m_buttonName == s_controllerButtons[0].Value;
@@ -24,7 +38,6 @@ public class ControllerInputEvent : InputEventBase
 
     [SerializeField] [ValueDropdown(nameof(s_controllerButtons))] protected string m_buttonName = "";
     [SerializeField] [ShowIf("@CustomButtonName", true)] protected string m_customButtonName = "";
-    
     [SerializeField] protected InputMode m_mode = InputMode.Up;
     
     private static ValueDropdownList<string> s_controllerButtons = new ValueDropdownList<string>()
