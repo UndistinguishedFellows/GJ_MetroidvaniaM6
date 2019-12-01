@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0ab729d53d094498f2c2b6ff3f6cd0, type: 3}
+  m_Name: GameInputEvent
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_inputEvents
+      Entry: 7
+      Data: 0|System.Collections.Generic.HashSet`1[[InputEventBase, Gameplay.Runtime]],
+        System.Core
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|MouseButtonInputEvent, Gameplay.Runtime
+    - Name: m_buttonCode
+      Entry: 3
+      Data: 0
+    - Name: m_mode
+      Entry: 3
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|KeyboardInputEvent, Gameplay.Runtime
+    - Name: m_keyCode
+      Entry: 3
+      Data: 100
+    - Name: m_mode
+      Entry: 3
+      Data: 4
+    - Name: m_modifier
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|ControllerInputEvent, Gameplay.Runtime
+    - Name: m_buttonName
+      Entry: 1
+      Data: joystick button 0
+    - Name: m_customButtonName
+      Entry: 1
+      Data: Custom
+    - Name: m_mode
+      Entry: 3
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_axisInputEvents
+      Entry: 7
+      Data: 4|System.Collections.Generic.HashSet`1[[AxisInputEvent, Gameplay.Runtime]],
+        System.Core
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 5|AxisInputEvent, Gameplay.Runtime
+    - Name: m_axisName
+      Entry: 1
+      Data: 
+    - Name: m_axisType
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_name: 
