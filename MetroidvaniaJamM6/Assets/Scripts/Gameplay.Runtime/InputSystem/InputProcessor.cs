@@ -111,3 +111,4 @@ public class InputProcessor : MonoBehaviour
     private Dictionary<GameInputEvent, List<IInputReceiver>> m_gameInputsCallbacks = new Dictionary<GameInputEvent, List<IInputReceiver>>();
     private Dictionary<AxisInputEvent, List<IInputReceiver>> m_axisCallbacks = new Dictionary<AxisInputEvent, List<IInputReceiver>>();
 }
+
