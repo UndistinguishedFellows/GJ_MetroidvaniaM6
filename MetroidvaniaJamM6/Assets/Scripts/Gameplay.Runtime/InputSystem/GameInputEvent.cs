@@ -37,9 +37,5 @@ public class GameInputEvent : SerializedScriptableObject
 
     [SerializeField] private string m_name = "";
     [SerializeField] private HashSet<InputEventBase> m_inputEvents = new HashSet<InputEventBase>();
-<<<<<<< HEAD
-=======
-    
     [SerializeField] private HashSet<AxisInputEvent> m_axisInputEvents = new HashSet<AxisInputEvent>();
->>>>>>> helper-branch
 }
